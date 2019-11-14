@@ -19,24 +19,24 @@ export default {
   components: {
     card
   },
-　data: function() {
-　　　return {
-       categories: [
-           { name: '文化'},
-           { name: '刀剣'},
-           { name: '書画'}
-       ],
-　　　　records: [
-　　　　　{ name: '山田', age: '34歳' },
-　　　　　{ name: '田中', age: '45歳' }
-　　　　]
-　　　}
-　　},
-　　computed: {
-　　　limitCount() {
-　　　　return this.records.slice(0,4)
-　　　}
-　　}
+  data: function() {
+    return {
+      categories: [
+        { name: '文化'},
+        { name: '刀剣'},
+        { name: '書画'}
+      ],
+      records: [
+        { name: '山田', age: '34歳' },
+        { name: '田中', age: '45歳' }
+      ]
+     }
+  },
+  computed: {
+    limitCount() {
+      return this.records.slice(0,4)
+    }
+  }
 }
 </script>
 
